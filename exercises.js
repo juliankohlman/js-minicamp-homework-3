@@ -98,7 +98,7 @@ function setUsersToPremium(users) {
   //   user.isPremium = true;
   // }
   // return users;
-  users.forEach(function (user, index, arr) {
+  users.forEach(function (user) {
     user.isPremium = true;
   });
   return users;
@@ -112,7 +112,7 @@ function sumUserPostLikes(user) {
   // return the sum
   var allLikes = 0;
 
-  user.posts.forEach(function (post){
+  user.posts.forEach(function (post) {
     allLikes += post.likes;
   });
   return allLikes;
